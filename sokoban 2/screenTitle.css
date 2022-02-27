@@ -1,0 +1,150 @@
+
+#InstructionContent{
+    display: none;
+    position: absolute;
+    background-color:  #BDC0BA;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 600px;
+    height: 80%;
+    z-index: 100;
+    box-shadow: 0 1px 32px white;
+}
+#close{
+    display: inline-flex;
+    float: right;
+    margin: 10px;
+  
+}
+.InsContent{
+    margin: 40px 0;
+   display: block;
+}
+.InsContent p{
+    padding: 0 30px;
+    text-align: left;
+}
+.PicContent{
+    padding: 50px 30px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-gap: 20px;
+    grid-auto-flow: row;
+    justify-content: center;
+        align-content: center;
+        font-size: 16px;
+    
+}
+.PicContent .pictures{
+    display: grid;
+    align-items: center;
+    justify-items: center;  
+}
+
+#close button{
+    width: 30px;
+    height: 30px;
+    font-size: 1.5rem;
+    border-radius: 10px;
+}
+#close button:hover{
+    background-color: rgba(83, 89, 83, 1) ;
+    color: white;
+}
+#screenTitle{
+  
+   background: rgba(83, 89, 83, 1);
+   width: 100%;
+   height: 100%;
+   position: absolute;
+   z-index: 10;
+}
+#title{
+    margin: auto;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+
+    width: 1000px;
+    height: 300px;
+    opacity: 1;
+    font-size: 30px;
+    background-color: #BDC0BA;
+
+   
+}
+#title p{
+    margin: 40px;
+    font-size: 100px;
+    color: black;
+    text-shadow: 2px 2px 5px black;
+}
+.titleBtns{
+    display: flex;
+    padding: 50px;
+    justify-content: space-around;
+ 
+}
+
+
+:root {
+   
+   
+    --light: #BDC0BA;
+    --dark: #535953;
+    --text: black;
+  }
+.titleBtns button{
+    display: block;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  background-color: var(--light);
+  width: 200px;
+  height: 70px;
+  border-radius: 30px;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--text);
+  background-size: 100% 100%;
+  box-shadow: 0 0 0 7px var(--light) inset;
+  margin-bottom: 15px;
+  box-shadow: 2px 2px 5px;
+}
+#title{
+    background-image: linear-gradient(
+        130deg,
+        transparent 10%,
+        var(--dark) 10% 20%,
+        transparent 20% 30%,
+        var(--dark) 30% 40%,
+        transparent 40% 50%,
+        var(--dark) 50% 60%,
+        transparent 60% 70%,
+        var(--dark) 70% 80%,
+        transparent 80% 90%,
+        var(--dark) 90% 100%
+      );
+      animation: background 10s linear infinite;
+
+
+}
+.titleBtns button:hover{
+   background-color: var(--dark);
+   color: white;
+
+}
+@keyframes background {
+    0% {
+      background-position: 0 0;
+    }
+    100% {
+      background-position: 1000px 0;
+    }
+  }

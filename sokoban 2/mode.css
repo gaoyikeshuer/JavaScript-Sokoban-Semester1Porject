@@ -1,0 +1,104 @@
+.content-1{
+    
+    border-radius: 50px;
+    font-size: 2rem;
+    text-align: center;
+    background-color: #BDC0BA;
+    box-shadow: 0 1px 32px white;
+}
+
+ul{
+    list-style:none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+/*form*/
+
+.modeSelect{
+    padding:30px 30px;
+    display: flex;
+    justify-content: space-around;
+}
+
+select {
+    /* Reset Select */
+
+    outline: 0;
+    border: 0;
+    box-shadow: none;
+    /* Personalize */
+  
+    flex: 1;
+    padding: 0 1em;
+    color:black;
+    background-color:white;
+    background-image: none;
+    cursor: pointer;
+    
+  }
+  /* Remove IE arrow */
+select::-ms-expand {
+    display: none;
+  }
+  /* Custom Select wrapper */
+  .select {
+    position: relative;
+    display: flex;
+    width: 50%;
+    height: 40px;
+    border-radius: 20px;
+    overflow: hidden;
+  }
+
+
+  
+  /* Other styles*/
+ 
+  h1 {
+    margin: 0 0 0.25em;
+  }
+  a {
+    font-weight: bold;
+    color: var(--gray);
+    text-decoration: none;
+    padding: .25em;
+    border-radius: .25em;
+    background: white;
+  }
+  
+p{   
+  
+    font-size: 20px;
+    text-align: center;
+    line-height: 40px;
+}
+
+
+
+/* Fill button styling */
+.fill {
+    display: block;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  background-color: var(--dark);
+  width: 200px;
+  height: 70px;
+  border-radius: 30px;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--light);
+  background-size: 100% 100%;
+  box-shadow: 0 0 0 7px var(--dark) inset;
+  margin-bottom: 15px;
+}
+
+
+.fill:hover {
+  color: white;
+}
+/* End of Fill Button  */

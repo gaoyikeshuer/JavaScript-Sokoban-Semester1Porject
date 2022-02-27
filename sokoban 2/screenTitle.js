@@ -1,0 +1,15 @@
+$('#Start').click(
+    function(){
+        $('#screenTitle').hide();
+    }
+)
+$('#close').click(
+    function(){
+        $('#InstructionContent').hide();
+    }
+)
+$('#Instruction').click(
+    function(){
+        $('#InstructionContent').show();
+    }
+)

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="./sokoban.css">
+    <link rel="stylesheet" href="./mode.css">
+    <link rel="stylesheet" href="./screenTitle.css">
+
+</head>
+
+<body>
+    <div id="InstructionContent">
+        <div id="close"><button>X</button></div>
+        <div class="InsContent">
+            
+            <p>* Arrow keys for movement</p>
+            <p>* Only one box can be pushed at a time.</p>
+            <p>* A box cannot be pulled.</p>
+            <p>* The player cannot walk through boxes or walls.</p>
+            <p>* The puzzle is solved when all boxes are on the goals.</p>
+            <div class="PicContent" >
+              <div class="pictures"><img src="./wall.jpeg" alt="" width="50px" height="50px">
+              </div>
+              <div>Walls surround a Sokoban puzzle and the Player cannot walk through them. Walls make up the layout of the puzzle.</div>
+            
+               <div class="pictures"><img src="./vacancy.jpg" alt="" width="50px" height="50px" ></div>
+               <div>Push all the boxes to the top of the goal as shown in the picture to be considered to pass the level</div>
+               <div class="pictures"><img src="./box.jpeg" alt="" width="50px" height="50px" ></div>
+               <div>Boxes can be pushed by the Player. Boxes must be placed on all the Goals in the puzzle.</div>
+               <div class="pictures" ><img src="./player-front.png" alt="" width="50px" height="50px" ></div>
+               <div>You are in control of the Player. The Player can move up, down, left and right by using the arrow keys on the keyboard.</div>
+            </div>
+        
+        </div>
+    
+    </div>
+    <div id="screenTitle">
+        <div id="title">
+            <p>SOKOBAN</p>
+            <div class="titleBtns">
+                <button id="Instruction">Instruction</button>
+                <button id="Start">Start</button>        
+            </div>        
+    
+        </div>
+      
+    </div>
+    <div class="banner">
+        <div id="limited-banner" >
+        </div>
+
+    </div>
+
+    <div class="content" >
+        <div class="content-1" contenteditable="false">
+            <div class="levelMenu">
+                <div class="modeSelect">
+                    <p>Difficulty selection</p>
+                    <div class="select">
+                        <select id="modeSelect">
+                          <option value="Easy" selected>Easy</option>
+                          <option value="Hard">Hard</option>
+                        </select>
+                      </div>
+                </div>
+            </div>
+
+            <div id= "EasyLevelSelect" style>
+                <ul id="easyLevels">
+                    <li id="level-1">
+                        <button id="EasyLevel1" type="button" class="fill">Easy Level 1</button>
+                    </li>
+                    <li id="level-2">
+                        <button id="EasyLevel2" type="button" class="fill">Easy Level 2</button>
+                    </li>
+                    <li id="level-3">
+                        <button id="EasyLevel3" type="button" class="fill">Easy Level 3</button>
+                    </li>
+                </ul>
+            </div>
+            <div id="HardLevelSelect" style>
+                <ul id="hardLevels">
+                    <li id="level-1">
+                        <button id="HardLevel1" type="button" class="fill">Hard level 1</button>
+                    </li>
+                    <li id="level-2">
+                        <button id="HardLevel2" type="button" class="fill">Hard level 2</button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="content-2" contenteditable="false">
+            <div class="Title">
+                <div id="levelTitle"></div>
+                <div id="moveSteps">Moves:</div>
+                <div id="pushes">Pushes: </div>
+            </div>
+                <div id="container"></div>
+
+                <div class="buttons">
+                    <button id="restart">Restart this level</button>
+                    <button id="previous">Back to previous step</button>
+                </div>
+            
+
+        </div>
+    </div>
+    <script src="./screenTitle.js"></script>
+    <script src="./mode.js"></script>
+    <script src="./sokoban.js"></script>
+</body>
+
+</html>
